@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "9c1decd5-4f92-42a0-9761-3ef2241d79f6",
+		"name": "Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://140.118.121.100:5055/Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Student_id",
+							"value": "M10902208",
+							"type": "text"
+						},
+						{
+							"key": "Student_name",
+							"value": "謝黃鈞",
+							"type": "text"
+						},
+						{
+							"key": "Email",
+							"value": "M10902208@gapps.ntust.edu.tw",
+							"type": "text"
+						},
+						{
+							"key": "Department",
+							"value": "NTUST, EE",
+							"type": "text"
+						},
+						{
+							"key": "jpg",
+							"type": "file",
+							"src": "/C:/Users/user/Desktop/鈞windows/大學/研究所推甄/圖片/M10902208.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://140.118.121.100:5055/Store",
+					"protocol": "http",
+					"host": [
+						"140",
+						"118",
+						"121",
+						"100"
+					],
+					"port": "5055",
+					"path": [
+						"Store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://140.118.121.100:5055/Get?Student_id=M10902208",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://140.118.121.100:5055/Get?Student_id=M10902208",
+					"protocol": "http",
+					"host": [
+						"140",
+						"118",
+						"121",
+						"100"
+					],
+					"port": "5055",
+					"path": [
+						"Get"
+					],
+					"query": [
+						{
+							"key": "Student_id",
+							"value": "M10902208"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
