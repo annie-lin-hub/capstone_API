@@ -24,5 +24,5 @@ myForm.addEventListener("submit", function (e) {
 });
 
 function render(data) {
-    window.location.replace("./profile/profile.html");
+    window.location.replace("./profile.html");
 }
